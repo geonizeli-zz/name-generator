@@ -1,13 +1,12 @@
 module NameModule
   class Compose
-    def initialize
-      @how_many_first
-      @how_many_last
+    def initialize(size)
+      @size = size
     end
 
     def call
       @how_many_first = 1 if @how_many_first == nil
-      @how_many_first = 1 if @how_many_first == nil
+      @how_many_last = 1 if @how_many_last == nil
 
       name = ''
       @how_many_first.each do |n|
